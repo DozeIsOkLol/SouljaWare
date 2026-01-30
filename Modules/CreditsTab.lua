@@ -1,6 +1,6 @@
 -- CreditsTab.lua
-local function initCreditsTab(Window)
-    local CreditsTab = Window:AddTab('Credits', Window.Icons.Info)
+local function initCreditsTab(Window, lp, Workspace, TweenService)  
+    local CreditsTab = Window:AddTab('Credits', UI.Icons.Info) 
 
     CreditsTab:AddSection('Developers')
     CreditsTab:AddLabel('Script & GUI: SouljaWitchSrc')
