@@ -3,16 +3,10 @@ local function initCreditsTab(Window, lp, Workspace, TweenService) -- Accept ext
     -- Use UI.Icons here — 'UI' is the global from the main script's loadstring
     local CreditsTab = Window:AddTab('Credits', UI.Icons.Info)
 
-    CreditsTab:AddSection('Developers')
-    CreditsTab:AddLabel('Script & GUI: SouljaWitchSrc')
-    CreditsTab:AddLabel('Tester: Aspire')
+CreditsTab:AddParagraph('Developers', 'Script: SouljaWitchSrc\nTester: Aspire\nTesters: Aspire\nKill Aura and Telepots from Neutral (Ive updated them) Make sure to check his script out')
+CreditsTab:AddParagraph('Libraries & Asset', 'UI Library: XanBar\nIcons: XanBar')
+CreditsTab:AddParagraph('Thanks For Using', 'Thanks for supporting this script!')
 
-    CreditsTab:AddSection('Libraries & Assets')
-    CreditsTab:AddLabel('UI Library: XanBar')
-    CreditsTab:AddLabel('Icons: XanBar')
-
-    CreditsTab:AddSection('Thanks For Using')
-    CreditsTab:AddLabel('Thanks for supporting this script!')
 
     return CreditsTab -- optional, but good practice
 end
