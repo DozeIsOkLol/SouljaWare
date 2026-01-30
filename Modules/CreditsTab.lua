@@ -1,6 +1,6 @@
 -- CreditsTab.lua
-local function initCreditsTab(Window, lp, Workspace, TweenService)  -- Accept extras safely
-    -- Use UI.Icons here — UI is the global from the main script
+local function initCreditsTab(Window, lp, Workspace, TweenService) -- Accept extras safely
+    -- Use UI.Icons here — 'UI' is the global from the main script's loadstring
     local CreditsTab = Window:AddTab('Credits', UI.Icons.Info)
 
     CreditsTab:AddSection('Developers')
@@ -14,7 +14,7 @@ local function initCreditsTab(Window, lp, Workspace, TweenService)  -- Accept ex
     CreditsTab:AddSection('Thanks For Using')
     CreditsTab:AddLabel('Thanks for supporting this script!')
 
-    return CreditsTab  -- optional
+    return CreditsTab -- optional, but good practice
 end
 
 return initCreditsTab
